@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "879893229231",
+    "project_id": "kurd-gram-888fd",
+    "storage_bucket": "kurd-gram-888fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879893229231:android:42892c7953b00b30036e5a",
+        "android_client_info": {
+          "package_name": "com.example.kurdgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879893229231-9ensa9bjqaai0esche3atso7k1j27sjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCGobBmv7OFShvG1Api4fI8B4Ps-pC9MM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "879893229231-9ensa9bjqaai0esche3atso7k1j27sjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
