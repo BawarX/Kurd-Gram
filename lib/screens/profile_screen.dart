@@ -90,6 +90,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           CircleAvatar(
                             backgroundColor: Colors.grey,
                             backgroundImage: NetworkImage(
+                              // mamosta hooshyar gote datann cached network image bakar benn,
+                              // balam awash taza har esh daka so no problem : ) // thanks Mr.Hooshyar :)
                               userData['photoUrl'],
                             ),
                             radius: 40,

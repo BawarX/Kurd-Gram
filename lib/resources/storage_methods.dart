@@ -8,9 +8,9 @@ class StorageMethods {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseStorage _storage = FirebaseStorage.instance;
 
-  // adding image to firebase storage
+  // rasme bo firestore
   Future<String> uploadImageToStorage(String childName, Uint8List file, bool isPost) async {
-    // creating location to our firebase storage
+    // loaction labo firestore
     
     Reference ref =
         _storage.ref().child(childName).child(_auth.currentUser!.uid);
@@ -19,7 +19,7 @@ class StorageMethods {
       ref = ref.child(id);
     }
 
-    // putting in uint8list format -> Upload task like a future but not future
+    
     UploadTask uploadTask = ref.putData(
       file
     );

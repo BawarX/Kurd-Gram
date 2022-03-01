@@ -13,7 +13,7 @@ import 'package:provider/provider.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // initialise app based on platform- web or mobile
+  
  
   await Firebase.initializeApp();
   
@@ -39,9 +39,9 @@ class MyApp extends StatelessWidget {
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.active) {
-              // Checking if the snapshot has any data or not
+              // check bka bzana snapshot datay haya yan na
               if (snapshot.hasData) {
-                // if snapshot has data which means user is logged in then we check the width of screen and accordingly display the screen layout
+                // agar yes farmu bro  mobilescreen
                 return const ResponsiveLayout(
                   mobileScreenLayout: MobileScreenLayout(),
                   webScreenLayout: WebScreenLayout(),
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
               }
             }
 
-            // means connection to future hasnt been made yet
+            
             if (snapshot.connectionState == ConnectionState.waiting) {
               return const Center(
                 child: CircularProgressIndicator(),
