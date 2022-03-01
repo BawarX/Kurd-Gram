@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:kurdgram/resources/auth_methods.dart';
 import 'package:kurdgram/responsive/mobile_screen_layout.dart';
@@ -94,10 +95,12 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: Container(),
                 flex: 2,
               ),
-              SvgPicture.asset(
-                'assets/ic_instagram.svg',
-                color: primaryColor,
-                height: 64,
+             Container(
+                child: Text(
+                  'K U R D  G R A M', 
+                style: GoogleFonts.charm(fontSize: 30, fontWeight: FontWeight.w600),
+                
+                ),
               ),
               const SizedBox(
                 height: 64,
@@ -178,7 +181,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(4)),
                     ),
-                    color: blueColor,
+                    color: Color.fromARGB(216, 252, 10, 59)
                   ),
                 ),
                 onTap: signUpUser,
