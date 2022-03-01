@@ -8,7 +8,7 @@ class AuthMethods {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // get user details
+  // wargrtne detaile user
   Future<model.User> getUserDetails() async {
     User currentUser = _auth.currentUser!;
 
