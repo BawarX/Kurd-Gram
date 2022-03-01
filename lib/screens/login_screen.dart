@@ -71,10 +71,12 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              
               Flexible(
                 child: Container(),
                 flex: 2,
               ),
+             
               Container(
                 child: Text(
                   'K U R D  G R A M', 

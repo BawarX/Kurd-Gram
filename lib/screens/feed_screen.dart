@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:kurdgram/utils/colors.dart';
 import 'package:kurdgram/utils/global_variable.dart';
 import 'package:kurdgram/widgets/post_card.dart';
@@ -25,10 +26,12 @@ class _FeedScreenState extends State<FeedScreen> {
           : AppBar(
               backgroundColor: mobileBackgroundColor,
               centerTitle: false,
-              title: SvgPicture.asset(
-                'assets/ic_instagram.svg',
-                color: primaryColor,
-                height: 32,
+              title: Container(
+                child: Text(
+                  'K U R D  G R A M', 
+                style: GoogleFonts.charm(fontSize: 20, fontWeight: FontWeight.w600),
+                
+                ),
               ),
               actions: [
                 IconButton(
