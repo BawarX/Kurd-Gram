@@ -96,11 +96,11 @@ class _SignupScreenState extends State<SignupScreen> {
                 flex: 2,
               ),
              Container(
-                child: Text(
+              child: Text(
                   'K U R D  G R A M', 
                 style: GoogleFonts.charm(fontSize: 30, fontWeight: FontWeight.w600),
                 
-                ),
+                ),  
               ),
               const SizedBox(
                 height: 64,
